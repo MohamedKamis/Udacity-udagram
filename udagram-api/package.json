@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "",
   "engines": {
-    "node": "14.16.1"
+    "node": "16.13.2"
   },
   "main": "server.ts",
   "scripts": {
@@ -12,9 +12,8 @@
     "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
-    "deploy": "sh ./bin/deploy.sh",
-    "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r archive.zip .&& cd ..",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "sh bin/deploy.sh",
+    "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r archive.zip .&& cd .."
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
