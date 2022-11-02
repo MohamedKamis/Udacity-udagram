@@ -31,7 +31,7 @@ jobs:
           name: Deploy Frontend
           command: 'npm run frontend:deploy'
 workflows:
-  version: 2
+  version: 2.0
   build:
     jobs:
       - build:
