@@ -1,9 +1,9 @@
-# set -x
-# set -e
+set -x
+set -e
 
-# eb init udagram-api --platform node.js --region us-east-1
+eb init udagram-api --platform node.js --region us-east-1
 
-# eb use udagram-api-dev
+eb use udagram-api-dev
 
 # eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME &&
 # eb setenv POSTGRES_PASSWORD=$POSTGRES_PASSWORD &&
@@ -19,4 +19,4 @@
 # eb setenv URL=$URL &&
 # eb setenv JWT_SECRET=$JWT_SECRET  &&
 
-# eb deploy udagram-api-dev
+eb deploy udagram-api-dev
