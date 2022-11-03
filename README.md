@@ -11,19 +11,4 @@ this what i do:
     (https://dl.circleci.com/status-badge/img/gh/MohamedKamis/Udacity-udagram/tree/main.svg?style=svg)
     (https://dl.circleci.com/status-badge/redirect/gh/MohamedKamis/Udacity-udagram/tree/main)
 }
-dotenv{
- eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME &&
- eb setenv POSTGRES_PASSWORD=$POSTGRES_PASSWORD &&
- eb setenv POSTGRES_DB=$POSTGRES_DB &&
- eb setenv POSTGRES_HOST=$POSTGRES_HOST &&
- eb setenv DBPORT=$DBPORT &&
- eb setenv PORT=$PORT &&
- 
- eb setenv AWS_BUCKET=$AWS_BUCKET &&
- eb setenv AWS_PROFILE=$AWS_PROFILE &&
- eb setenv AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY &&
- eb setenv AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID &&
- eb setenv AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION &&
- eb setenv URL=$URL &&
- eb setenv JWT_SECRET=$JWT_SECRET  &&
-}
+
